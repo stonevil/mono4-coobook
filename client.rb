@@ -1,0 +1,11 @@
+node_name "ci-ubuntu"
+cookbook_path ["/tmp/cookbooks"]
+data_bag_path "/tmp/data_bags"
+environment_path "/tmp/environments"
+node_path "/tmp/nodes"
+role_path "/tmp/roles"
+client_path "/tmp/clients"
+#user_path "/tmp/users"
+validation_key "/tmp/validation.pem"
+client_key "/tmp/client.pem"
+chef_server_url "http://127.0.0.1:8889"

@@ -1,0 +1,26 @@
+sudo: required
+
+language: ruby
+rvm:
+  - 2.1.4
+
+env:
+  - BERKSHELF_PATH=/tmp/
+
+before_install:
+  - sudo apt-get update -qq
+  - curl -L https://www.chef.io/chef/install.sh | sudo bash
+  - rm -Rf .bundle
+
+install:
+  - bundle install
+  - bundle exec berks vendor /tmp/cookbooks
+  - cp dummy-validation.pem /tmp/validation.pem
+  - cp dna.json /tmp/dna.json
+
+script:
+  - bundle exec foodcritic -f any .
+  - bundle exec tailor
+  - sudo chef-client -z -c client.rb -j dna.json
+  - cp dna-source.json /tmp/dna.json
+  - sudo chef-client -z -c client.rb -j dna.json
