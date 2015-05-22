@@ -1,11 +1,3 @@
-[![Travis-CI Build Status](https://secure.travis-ci.org/stonevil/mono4-cookbook.png?branch=master)](https://travis-ci.org/stonevil/mono4-cookbook)
-
-
-[![Code Climate](https://codeclimate.com/github/stonevil/mono4-cookbook/badges/gpa.svg)](https://codeclimate.com/github/stonevil/mono4-cookbook)
-
-[![Stories in Ready](https://badge.waffle.io/stonevil/mono4-cookbook.png?label=ready&title=Ready)](https://waffle.io/stonevil/mono4-cookbook)
-
-
 Description
 ===========
 
@@ -17,7 +9,7 @@ Requirements
 Platform:
 
 * Debian 7.8
-* Ubuntu 12.04, 14.04
+* Ubuntu 14.04
 * CentOS 7.0
 * RedHat, etc
 
