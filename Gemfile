@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://production.s3.rubygems.org'
 
 group :development do
   gem 'berkshelf'
