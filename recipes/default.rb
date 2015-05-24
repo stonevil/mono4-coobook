@@ -12,12 +12,10 @@ end
 if node['mono4']['install_method'] == 'source'
   include_recipe 'mono4::_source'
 elsif node['mono4']['install_method'] == 'package'
-  package "#{node['mono4']['package_name']}" do
+  package node['mono4']['package_name'] do
     version node['mono4']['package_version']
     action :install
   end
 else
   raise "Installation method #{node['mono4']['install_method']} not supported"
 end
-
-# know current versions: 3.2.8+dfsg-4ubuntu1.1, 4.0.1-0xamarin5
