@@ -5,6 +5,8 @@ machine:
     - docker
 
 dependencies:
+  post:
+    - bundle install
   override:
     - docker info
 
