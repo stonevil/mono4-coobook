@@ -7,6 +7,7 @@ machine:
 dependencies:
   override:
     - docker info
+    - bundle install
 
 test:
   post:
