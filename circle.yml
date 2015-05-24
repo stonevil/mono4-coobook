@@ -1,0 +1,22 @@
+machine:
+  ruby:
+    version: rbx-2.2.6
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+
+test:
+  post:
+  - bundle exec foodcritic -f any .
+  - bundle exec tailor
+  - cp .kitchen.circle.yml .kitchen.yml
+  - bundle exec kitchen converge package-centos-70
+  - bundle exec kitchen converge source-centos-70
+  - bundle exec kitchen converge package-ubuntu-1404
+  - bundle exec kitchen converge source-ubuntu-1404
+  - bundle exec kitchen converge package-debian-70
+  - bundle exec kitchen converge source-debian-70
+  - bundle exec kitchen destroy all
