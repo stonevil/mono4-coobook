@@ -7,6 +7,7 @@ group :development do
 
   gem 'test-kitchen'
   gem 'kitchen-vagrant'
+  gem 'kitchen-docker'
 
   gem 'foodcritic'
   gem 'tailor'
