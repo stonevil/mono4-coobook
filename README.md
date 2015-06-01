@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/stonevil/mono4-coobook.svg?style=svg)](https://circleci.com/gh/stonevil/mono4-coobook)
+
 Description
 ===========
 
