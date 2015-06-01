@@ -30,6 +30,7 @@ when 'debian'
   default['mono4']['package_version'] = '4.0.1-0xamarin5'
 
   default['mono4']['source']['dependencies'] = %w[
+    makedev
     libgdiplus
     zlib1g-dev
     autoconf
