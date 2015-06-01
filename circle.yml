@@ -10,6 +10,8 @@ dependencies:
       timeout: 1200
   override:
     - docker info
+  cache_directories:
+    - "~/.chefdk"
 
 test:
   post:
