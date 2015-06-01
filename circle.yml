@@ -13,7 +13,7 @@ dependencies:
     - "~/.chefdk"
 
 test:
-  post:
+  override:
   - bundle exec foodcritic -f any .
   - bundle exec tailor
   - cp .kitchen.circle.yml .kitchen.yml
