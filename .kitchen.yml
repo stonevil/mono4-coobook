@@ -8,6 +8,7 @@ provisioner:
   name: chef_zero
 
 platforms:
+  - name: ubuntu-12.04
   - name: ubuntu-14.04
   - name: debian-7.8
   - name: centos-7.0
@@ -25,3 +26,14 @@ suites:
   attributes:
     mono4:
       install_method: source
+- name: old-package
+  run_list:
+    - recipe[mono4]
+  attributes:
+    mono4:
+      install_method: package
+      apt_distribution: 'wheezy/snapshots/3.8.0'
+  includes:
+    - ubuntu-12.04
+    - ubuntu-14.04
+    - debian-7.8
