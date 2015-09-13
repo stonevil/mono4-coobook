@@ -1,6 +1,6 @@
 default['apt']['compile_time_update'] = true
 
-default['yum-epel']['repositories'] = %w{epel epel-testing}
+default['yum-epel']['repositories'] = %w(epel epel-testing)
 
 default['mono4']['install_method'] = 'package'
 
@@ -14,22 +14,22 @@ when 'rhel', 'fedora'
   default['mono4']['package_name'] = 'mono-complete'
   default['mono4']['package_version'] = '4.0.1-4'
 
-  default['mono4']['source']['dependencies'] = %w[
+  default['mono4']['source']['dependencies'] = %w(
     libgdiplus
     zlib-devel
     autoconf
     automake
     libtool
     gettext
-  ]
+  )
 when 'debian'
   default['mono4']['apt_repository'] = 'http://download.mono-project.com/repo/debian'
   default['mono4']['apt_keyserver'] = 'keyserver.ubuntu.com'
   default['mono4']['apt_repository_key'] = '3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF'
+  default['mono4']['apt_distribution'] = 'wheezy'
   default['mono4']['package_name'] = 'mono-complete'
-  default['mono4']['package_version'] = '4.0.1-0xamarin5'
 
-  default['mono4']['source']['dependencies'] = %w[
+  default['mono4']['source']['dependencies'] = %w(
     makedev
     libgdiplus
     zlib1g-dev
@@ -37,5 +37,5 @@ when 'debian'
     automake
     libtool
     gettext
-  ]
+  )
 end
