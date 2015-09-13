@@ -12,7 +12,7 @@ when 'rhel', 'fedora'
   default['mono4']['yum_repository'] = 'http://download.mono-project.com/repo/centos/'
   default['mono4']['yum_repository_key'] = 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF'
   default['mono4']['package_name'] = 'mono-complete'
-  default['mono4']['package_version'] = '4.0.1-4'
+  default['mono4']['package_version'] = '4.0.4-1'
 
   default['mono4']['source']['dependencies'] = %w(
     libgdiplus
