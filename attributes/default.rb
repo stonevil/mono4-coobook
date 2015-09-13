@@ -5,7 +5,7 @@ default['yum-epel']['repositories'] = %w(epel epel-testing)
 default['mono4']['install_method'] = 'package'
 
 default['mono4']['source']['git_uri'] = 'git://github.com/mono/mono.git'
-default['mono4']['source']['git_branch'] = 'mono-4.0.0-branch'
+default['mono4']['source']['git_branch'] = 'mono-4.2.0-branch'
 
 case node['platform_family']
 when 'rhel', 'fedora'
