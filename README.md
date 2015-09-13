@@ -3,6 +3,8 @@
 Description
 ===========
 
+[![Join the chat at https://gitter.im/stonevil/mono4-coobook](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/stonevil/mono4-coobook?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Installs and configures Mono Framework v4.x. Can optionally build and install Mono Framework from sources.
 
 Requirements
